@@ -12,9 +12,9 @@ var rangersList = document.getElementById('rangers')
 // rangersList.append(newName)
 
 for (let i = 0; i < powerRangers.length; i++) {
-  let newName = document.createElement('li')
-  newName.textContent = powerRangers[i]
-  rangersList.append(newName)
-}
+  // let newName = document.createElement('li')
+  // newName.textContent = powerRangers[i]
+  // rangersList.append(newName)
 
-console.log('hey')
+  rangersList.innerHTML += `<li>${powerRangers[i]}</li>`
+}
